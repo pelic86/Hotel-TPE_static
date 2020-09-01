@@ -1,0 +1,309 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Styling */
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Utility CLasses => which can use everywhere*/
+
+.container {
+  /* margin : auto => 左右之中 */
+  margin: auto;
+  /* max-width => 固定最大寬度 */
+  max-width: 1100px;
+  /* overflow :auto => 背景永遠都會在最下面 */
+  overflow: auto;
+  /* padding => 元素內的面積 */
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: #fcc54e;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+/* botton dark */
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* botton hover */
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+
+/* botton light */
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* bg => background */
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+/* Clear the FLoat */
+.clr {
+  clear: both;
+}
+
+/* large-heading */
+.l-heading {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+/* Padding */
+/* py => padding for the top & bottom */
+.py-1 {
+  padding: 10px 0;
+}
+.py-2 {
+  padding: 20px 0;
+}
+.py-3 {
+  /* padding => 元素自身的面積 */
+  padding: 30px 0;
+}
+
+/* Navbar */
+#navbar {
+  background: #333;
+  /* 此處color沒用 因為指定在 ID level */
+  /* 應該要用在 Class level 或是 ID 裡面的指定的element*/
+  color: #fff;
+  /* overflow => the background will shows no matter what */
+  overflow: auto;
+}
+
+#navbar a {
+  color: #fff;
+}
+
+/* float => 在沒有 flexbox 以前自己配置 */
+#navbar .logo {
+  float: left;
+  padding-top: 20px;
+  /* padding-left: 20px; */
+}
+
+#navbar ul {
+  float: right;
+  list-style: none;
+}
+/* 把 list 變成 Horizontal */
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+}
+
+/* Showcase */
+#showcase {
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 600px;
+}
+
+#showcase .showcase-content {
+  color: #eae1e1;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  font-weight: 300;
+  /* font-style: oblique; */
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+/* Home Info */
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url("../img/photo-1.jpg") no-repeat;
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#home-info .info-content p {
+  padding-bottom: 30px;
+}
+
+/* Features */
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+/* About Info */
+#about-info .info-right {
+  float: right;
+  width: 50%;
+  /* min-height: 100%; => 全部顯示 */
+  min-height: 100%;
+}
+
+#about-info .info-right img {
+  /* img 本身為inline level => 若要改變margin auto 須改為block level */
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 50%;
+}
+
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+/* Testimonials */
+#testimonials {
+  height: 100%;
+  background: url("../img/test-bg.jpg") no-repeat center center/cover;
+  padding-top: 100px;
+}
+
+#testimonials h2 {
+  color: #fff;
+  text-align: center;
+  /* padding => 自身元素的面積 */
+  padding-bottom: 10px;
+}
+
+#testimonials .testimonial {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.75;
+}
+
+#testimonials .testimonial img {
+  float: left;
+  width: 100px;
+  /* margin-right => 推別人 往右*/
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Contact Form */
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  /* margin => 元素與元素之間的推動 */
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  /* padding 用在container => 自身元素的面積
+     padding 用在input/textarea => 加寬加厚 (增加自身面積)*/
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+/* focus 用在點選時的框框顏色 */
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+
+/* Footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  /* padding 是自身元素的面積 */
+  padding: 3px;
+}
